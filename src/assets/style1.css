@@ -1,0 +1,801 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+
+	background-color:#0c1027 ;
+	color: white;
+
+}
+
+
+.extract{
+	height: 105vh;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-areas:
+	'navbar'
+	'lower';
+	grid-template-rows: 0.8fr 8fr;
+
+	overflow-y: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+	
+}
+.extract::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ================NAvigation======================*/
+
+.navbar{
+    grid-area: navbar;
+	background-color:#0c1027 ;
+    position: sticky;
+    height: 70px;
+    top:0px;
+    z-index: 100;
+    
+}
+.navbar-content{
+    
+    display: grid;
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'logo heading search notification user';
+    grid-template-columns: 2fr 9fr 1fr 1fr 2fr;
+}
+.logo{
+    grid-area: logo;
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo .lname{
+    color: white;
+    padding: 5px;
+}
+.logo .lname h3,.lname .lname h2{
+text-align: center;
+}
+.lname h2{
+    font-family: 'Merienda One', cursive;
+    font-size: 18px;
+}
+.lname h3{
+    font-family: 'Merienda One', cursive;
+    font-size: 15px;
+}
+
+.logo img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%; 
+}
+.heading{
+    grid-area: heading;
+    font-size: 25px;
+    padding: 10px 10px;
+    color: white;
+}
+.search{
+    grid-area: search;
+    width: 100%;
+}
+  
+#search  {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#search label{
+   position: absolute;
+   left: 5%;
+   top:24%;
+   cursor: pointer;
+
+}
+#id2{
+   position: absolute;
+   right: 5%;
+   cursor: pointer;
+
+}
+.search input{
+    font-size: 20px;
+    border-radius: 8px;
+    line-height: 2rem;
+    outline: none;
+
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    
+}
+.search input::placeholder{
+    color: white;
+
+}
+.notification{
+    
+    grid-area: notification;
+    text-align: center;
+    padding: 4px 0px;
+    filter: invert(1);
+}
+.notification i{
+    cursor: pointer;
+	font-size: 20px;
+	filter: invert();
+}
+.user{
+    grid-area:user;
+}
+
+
+
+/*===========Center area=================*/
+
+
+.lower{
+	height: auto;
+	grid-area: lower;
+	display: grid;
+	grid-template-rows: 0.85fr 1fr;
+	grid-template-areas: 
+	'div1'
+	'div2';
+	grid-gap: 1rem;
+
+	
+}
+
+.div1{
+	grid-area: div1;
+	display: grid;
+    grid-template-areas: 
+    'div11 div12';
+	grid-template-columns: 4fr 1.8fr;
+}
+
+.div2{
+	height: 50vh;
+	grid-area: div2;
+	display: grid;
+    grid-template-areas: 
+    'div21 aside';
+    grid-template-columns: 4fr 1.8fr;
+}
+
+.div11{
+	width: 70%;
+	margin: 0px auto;
+	grid-area: div11;
+	background-color: #101642;
+
+}
+
+.div12{
+	width: 70%;
+	margin: 0px auto;
+	grid-area: div12;
+	margin-right: 20%;
+    overflow-x: hidden;
+
+}
+
+.div21{
+	width: 70%;
+	margin: 0px auto;
+	grid-area: div21;
+	overflow-y: scroll;
+    overflow-x: hidden;
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+
+.aside{
+	width: 70%;	
+	margin: 0px auto;
+	grid-area: aside;
+	background-color: #101642;
+	margin-right: 20%;
+
+}
+
+
+/*============About Artist============*/
+
+
+.art-image{
+	display: flex;
+	width:40%;
+	background-color: #99ccff; 
+	position: relative;
+}
+.art-image img{
+
+	border-bottom-right-radius: 40%;
+	height: 100%;
+	width: 100%;
+}
+.art-image h1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0px -32px 39px 15px #403066;
+	border-bottom-right-radius: 40%;
+
+}
+.container{
+	height: 40VH;
+	width: 100%;
+	display: flex;
+
+}
+.about{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin:50px 20px;
+	justify-content: space-around;
+
+}
+.about p{
+	width:100%;
+}
+.name{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:20px;
+}
+
+.div11{
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn1{
+	display: flex;
+	justify-content: space-between;
+}
+
+.follow{
+	color: white;
+}
+
+.btn a{
+	text-decoration: none;
+	color: white;
+}
+.btn{
+	width: 30%;
+	font-size: 0.8rem;
+	padding:5px 3px;
+	margin-top: 40px;
+	background: linear-gradient(to right, #0033cc 23%, #660066 95%);
+	outline: none;
+	cursor: pointer;
+}
+
+
+
+/*==================Similar artist=================*/
+
+
+.head{
+	grid: div12;
+	background-color: #101642;
+
+}
+.similar{
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.similar h1{
+	color: white;
+	font-size:1.6rem;
+	padding: 8px;
+}
+.similar h3{
+	margin-right: 10px;
+}
+.new-img{
+	height:70px;
+	width:100px;
+	padding: 0px 10px;
+}
+
+.new-img img{
+	height:100%;
+	width:100%;
+}
+.box12{
+	padding: 8px;
+	display: flex;
+	background-color: #101642;
+	margin-top: 10px ;
+}
+.music-details {
+	cursor: pointer;
+    padding: 10px 10px;
+    color: #fff;
+}
+.icon{
+	display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 6px;
+}
+
+
+
+
+
+
+
+/*================Other songs by artist========================*/
+
+
+
+
+
+.div21::-webkit-scrollbar {
+    display: none;
+}
+
+.box123{
+	cursor: pointer;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin: 5px 0px;
+	background-color: #101642;
+
+}
+.main-img{
+	height:60px;
+	width:80px;
+	padding: 0px 10px;
+}
+.main-img img{
+	height:100%;
+	width:100%;
+}
+.heart123{
+position: absolute;
+right:10%;
+}
+.plus{
+position: absolute;
+right:5%;
+}
+
+
+
+/* ***************************************ASIDE/Recently Played*********************************** */
+
+
+
+
+
+.aside-container{
+    padding: 20px;
+    margin-right:5px;
+ 
+}
+
+
+.aside-container-common{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.aside-container-common::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.aside-container-common{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.box{
+    position: sticky;
+    top: 0px;
+}
+.box-box1-common{
+  
+    height:46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.music-info-nd-1-common{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.music-info h3{
+    margin-left: 46px;
+}
+
+
+
+.box-1{
+    margin:8px 3px; 
+}
+
+.music-info-1{
+  
+    position: relative;
+}
+
+.music-info h1{
+    color: white;
+    padding: 10px;
+}
+
+.music-img{
+
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer; 
+    border-radius: 20%;    
+    
+}
+
+.music-img img{
+    border-radius: 20%;
+    height: 100%;
+    width: 100%;
+
+}
+
+.play{
+    width:100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    opacity: 0;
+    color: white;
+    border-radius: 20%;
+
+}
+
+.play a{
+    color:white;
+    text-decoration: none;
+}
+
+.music-img:hover {
+    
+ 
+    box-shadow: 0 0 20px #74ADC8 ;
+    
+}
+
+.play:hover{
+    background:rgba(0, 0, 0, 0.37);
+    opacity: 1;
+}
+
+.music-detail{
+    padding: 0px 10px;
+    color: #fff;
+}
+
+.detail-size{
+    font-size: 0.8rem;
+}
+
+.heart-icon {
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+    
+}
+
+.heart-icon i{
+  color: rgb(255, 255, 255);
+
+}
+
+.heart-icon i:hover{
+color: red;
+  /* box-shadow: 0 0 20px #74ADC8 ; */
+
+
+}
+
+
+
+/*=================Music Player ===================*/
+
+
+
+
+.footer{
+	display: flex;
+	animation: zoomInDown 2s linear 1;
+	position: sticky;
+	bottom: 0px;
+	
+}
+
+.player{
+	background-color: #0c2742;
+	width:100%;
+	height: 82px;
+	position: absolute;
+	bottom: 0%;
+	box-shadow: 3px 3px 50px rgba(0,0,0,0.5), -3px -3px 50px rgba(0,0,0,05);
+}
+
+.live{
+	width: 90%;
+	margin: 0px auto;
+	cursor: pointer;
+}
+
+.title{
+    display: flex;
+    height: 38px;
+    justify-content:space-between;
+    margin: -30px 10px;
+	margin-top: 1px;
+	position: relative;
+}
+.music-logo{
+	display: flex;
+	flex-direction: row;
+}
+.text{
+	display: flex;
+	flex-direction: column;
+}
+
+.title img{
+	max-width: 100%;
+	height: 65px;
+	width: 65px;
+	margin-top: -31px;
+	border-radius: 50%;
+	justify-content: center;
+}
+.volume-bar{
+	display: flex;
+	position: absolute;
+	right: 1%;
+	margin-top: 20px;
+}
+.volume{
+	width: 80px;
+    height: 4px;
+    margin-top: 5px;
+    margin-left: 2px;
+    background: rgba(56, 51, 51, 0.3);
+	display: flex;
+	position: relative;
+}
+.volume .fill{
+	background: green;
+}
+
+
+.time{
+	display: flex;
+	justify-content: space-around;
+	margin: -12px 0 0 0;
+}
+
+.time a{
+	color: white;
+	font-size: 0.8rem;
+	text-decoration: none;
+}
+
+
+
+
+
+/*=======Seekbar=============*/
+
+.seek{
+	width: 50%;
+	height: 4px;
+	background:rgba(255,255,255,.3);
+	margin:5px 0;
+	margin-left: 25%;
+	position: relative;
+}
+
+.fill{
+	width: 65%;
+	height: 4px;
+	background:rgba(255,255,255,.7);
+}
+
+.handle{
+	width: 10px;
+	height: 10px;
+	background:rgba(255,255,255,.8);
+	border-radius: 50%;
+	position: absolute;
+	top: -73%;
+    right: 34%;
+}
+/*==============Control Buttons=========*/
+.btns{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.btns a{
+	color: white;
+	font-size: 0.8rem;
+	margin: 0px 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+.btns a:hover{
+	color: #b9b6b6;
+}
+.btns a:nth-child(1) ,.btns a:nth-child(5){
+	opacity: 0.6;
+}
+
+.btns a:nth-child(1):hover ,.btns a:nth-child(5):hover{
+	opacity: 1;
+	color: white;
+}
+
+.btns a:nth-child(3){
+	border:2px solid white;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+
+
+
+@keyframes zoomInDown {
+	from {
+	  opacity: 0;
+	  -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+	  transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+	  -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	}
+  
+	60% {
+	  opacity: 1;
+	  -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+	  transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+	  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+	  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+	}
+  }
+
+
+
+
+
+
+
+
+/* ============Animation for photos==========*/
+
+
+
+
+
+
+.logo{
+	cursor: pointer;
+}
+
+.box-1:hover,.box12:hover{
+    transform: scale(1.05 ,1.1);
+}
+.box123:hover{
+	background-color: lightslategrey;
+	
+}
+
+.user:hover{
+    animation: flip 1s ease-in-out  1;
+
+}
+.logo1 img,.music-logo img{
+    animation: animate 11s linear infinite;
+
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+        
+    }   
+    to{
+        transform: rotate(360deg);
+        
+    } 
+}
+
+
+
+
+@-webkit-keyframes flip {
+    from {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    50% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+      transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    to {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  }
+  
