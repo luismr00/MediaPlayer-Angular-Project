@@ -1,196 +1,179 @@
 /* ***************************************FOOTER*********************************** */
 
+/*=================Music Player ===================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
 
+h2 {
+  text-align: center;
 
+  font-family: "Merienda One", cursive;
+  font-size: 18px;
+}
+h5 {
+  margin-top: 0px;
+  font-size: 15px;
+  color: white;
+  letter-spacing: 0.8px;
+}
+.footer {
+  display: flex;
+  animation: zoomInDown 2s linear 1;
+  position: sticky;
+  bottom: 0px;
+}
 
+.player {
+  background-color: #0c2742;
+  width: 100%;
+  height: 82px;
+  position: absolute;
+  bottom: 0%;
+  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.5), -3px -3px 50px rgba(0, 0, 0, 05);
+}
 
-            /*=================Music Player ===================*/
-            * {
-                margin: 0px;
-                padding: 0px;
-                color: white;
-            
-            }
+.live {
+  width: 90%;
+  margin: 0px auto;
+  cursor: pointer;
+}
 
-            h2{
-                text-align: center;
-           
-                font-family: 'Merienda One', cursive;
-                font-size: 18px;
-            }
-            h5{
-                margin-top: 0px;
-                font-size: 15px;
-                color:white;
-                letter-spacing: 0.8px;
-            }
-            .footer{
-                display: flex;
-                animation: zoomInDown 2s linear 1;
-                position: sticky;
-                bottom: 0px;
-                
-            }
-            
-            .player{
-                background-color: #0c2742;
-                width:100%;
-                height: 82px;
-                position: absolute;
-                bottom: 0%;
-                box-shadow: 3px 3px 50px rgba(0,0,0,0.5), -3px -3px 50px rgba(0,0,0,05);
-            }
-            
-            .live{
-                width: 90%;
-                margin: 0px auto;
-                cursor: pointer;
-            }
-            
-            .title{
-                display: flex;
-                height: 38px;
-                justify-content:space-between;
-                margin: -30px 10px;
-                margin-top: 1px;
-                position: relative;
-            }
-            .music-logo{
-                display: flex;
-                flex-direction: row;
-            }
-            .text{
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .title img{
-                max-width: 100%;
-                height: 65px;
-                width: 65px;
-                margin-top: -31px;
-                border-radius: 50%;
-                justify-content: center;
-            }
-            .volume-bar{
-                display: flex;
-                position: absolute;
-                right: 1%;
-                margin-top: 20px;
-            }
-            .volume{
-                width: 80px;
-                height: 4px;
-                margin-top: 5px;
-                margin-left: 2px;
-                background: rgba(56, 51, 51, 0.3);
-                display: flex;
-                position: relative;
-            }
-            .volume .fill{
-                background: green;
-            }
-            
-            
-            .time{
-                display: flex;
-                justify-content: space-around;
-                margin: -12px 0 0 0;
-            }
-            
-            .time a{
-                color: white;
-                font-size: 0.8rem;
-                text-decoration: none;
-            }
-            
-            
-            
-            
-            
-            /*=======Seekbar=============*/
-            
-            .seek{
-                width: 50%;
-                height: 4px;
-                background:rgba(255,255,255,.3);
-                margin:5px 0;
-                margin-left: 25%;
-                position: relative;
-            }
-            
-            .fill{
-                width: 65%;
-                height: 4px;
-                background:rgba(255,255,255,.7);
-            }
-            
-            .handle{
-                width: 10px;
-                height: 10px;
-                background:rgba(255,255,255,.8);
-                border-radius: 50%;
-                position: absolute;
-                top: -73%;
-                right: 34%;
-            }
-            
-            
-            /*==============Control Buttons=========*/
-            
-            
-            
-            .btns{
-                margin-top: 15px;
-                text-align: center;
-            }
-            
-            .btns a{
-                color: white;
-                font-size: 0.8rem;
-                margin: 0px 10px;
-                transition: all 0.3s ease-in-out;
-            }
-            
-            .btns a:hover{
-                color: #b9b6b6;
-            }
-            .btns a:nth-child(1) ,.btns a:nth-child(5){
-                opacity: 0.6;
-            }
-            
-            .btns a:nth-child(1):hover ,.btns a:nth-child(5):hover{
-                opacity: 1;
-                color: white;
-            }
-            
-            .btns a:nth-child(3){
-                border:2px solid white;
-                padding: 10px;
-                border-radius: 50%;
-            }
+.title {
+  display: flex;
+  height: 38px;
+  width: 200px;
+  justify-content: space-between;
+  /* margin: -30px 10px; */
+  margin-top: 1px;
+  position: relative;
+}
+.music-logo {
+  display: flex;
+  flex-direction: row;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
 
-            @keyframes zoomInDown {
-                from {
-                  opacity: 0;
-                  -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-                  transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-                  -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-                  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-                }
-              
-                60% {
-                  opacity: 1;
-                  -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-                  transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-                  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-                  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-                }
-              }
-        
-            
-           
-            
-            
-           
-           
+.title img {
+  max-width: 100%;
+  height: 65px;
+  width: 65px;
+  margin-top: -31px;
+  border-radius: 50%;
+  justify-content: center;
+}
+.volume-bar {
+  display: flex;
+  position: absolute;
+  right: 1%;
+  margin-top: 20px;
+}
+.volume {
+  width: 80px;
+  height: 4px;
+  margin-top: 5px;
+  margin-left: 2px;
+  background: rgba(56, 51, 51, 0.3);
+  display: flex;
+  position: relative;
+}
+.volume .fill {
+  background: green;
+}
+
+.time {
+  display: flex;
+  justify-content: space-around;
+  margin: -12px 0 0 0;
+}
+
+.time a {
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+/*=======Seekbar=============*/
+
+.seek {
+  width: 50%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 5px 0;
+  margin-left: 25%;
+  position: relative;
+}
+
+.fill {
+  width: 65%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.handle {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: -73%;
+  right: 34%;
+}
+
+/*==============Control Buttons=========*/
+
+.btns {
+  margin-top: -8px;
+  /* margin-bottom: 0px; */
+  text-align: center;
+}
+
+.btns a {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btns a:hover {
+  color: #b9b6b6;
+}
+.btns a:nth-child(1),
+.btns a:nth-child(5) {
+  opacity: 0.6;
+}
+
+.btns a:nth-child(1):hover,
+.btns a:nth-child(5):hover {
+  opacity: 1;
+  color: white;
+}
+
+.btns a:nth-child(3) {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}

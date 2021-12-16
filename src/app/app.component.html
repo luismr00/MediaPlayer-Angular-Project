@@ -1,9 +1,10 @@
 
 <!-- {{title}} -->
 
+<button (click)="changeColor()" [style.color]="'black'">Darkmode</button>
 <app-header></app-header>
 
-<div class="container">
+<div [style.backgroundColor]="color1" class="container">
 
   <div class="container1">
     <section class="section item">
@@ -13,21 +14,18 @@
           <img
             src="../assets/image/alone.jfif"
             alt=""
-            (click)="startPlaying()"
           />
         </div>
         <div class="coldplay cp2">
           <img
             src="../assets/image/lucifer.jfif"
             alt=""
-            (click)="startPlaying()"
           />
         </div>
         <div class="coldplay cp3">
           <img
             src="../assets/image/coldplay3.jfif"
             alt=""
-            (click)="startPlaying()"
           />
         </div>
       </div>
@@ -45,7 +43,6 @@
               <img
                 src="../assets/image/faded.jfif"
                 alt=""
-                (click)="startPlaying()"
               />
             </div>
             <div class="section-music-detail">
@@ -58,7 +55,6 @@
               <img
                 src="../assets/image/wewill.jfif"
                 alt=""
-                (click)="startPlaying()"
               />
             </div>
             <div class="section-music-detail">
@@ -70,8 +66,6 @@
             <div class="section-box-image">
               <img
                 src="../assets/image/havana.jfif"
-                alt=""
-                (click)="startPlaying()"
               />
             </div>
             <div class="section-music-detail">
@@ -84,7 +78,6 @@
               <img
                 src="../assets/image/imaginebeliver.jfif"
                 alt=""
-                (click)="startPlaying()"
               />
             </div>
             <div class="section-music-detail">

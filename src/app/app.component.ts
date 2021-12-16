@@ -7,91 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-world';
-  audio = new Audio();
-  hasStarted = false;
-  paused = true;
-  songs = [
-    {
-      artist: 'VNV Nation',
-      song: 'Dark Angel',
-      source: '../assets/Dark_Angel.mp3',
-      image: 'VNVNation.jpg',
-    },
-    {
-      artist: 'Emma Chaplin',
-      song: 'La Noche',
-      source: '../assets/La_Noche.mp3',
-      image: 'chaplin.jpg',
-    },
-    {
-      artist: 'Blood',
-      song: 'Morphine',
-      source: '../assets/morphine.mp3',
-      image: 'Blood.jpg',
-    },
-    {
-      artist: 'Rammstein',
-      song: 'Ich Will',
-      source: '../assets/Ich_Will.mp3',
-      image: 'rammstein.jpg',
-    },
-    {
-      artist: 'Tristania',
-      song: 'The Ravens',
-      source: '../assets/The_Ravens.mp3',
-      image: 'tristania.jpg',
-    },
-  ];
-  currentSong = 0;
-  pastSong = this.songs.length - 1;
+  color1 = '#0c1027';
+  darkmode = true;
 
-  playPause() {
-    if (this.hasStarted) {
-      if (this.paused) {
-        this.pickSong();
-        // console.log('Playing song with index number ' + this.currentSong);
-        // console.log(this.currentSong, this.pastSong);
-        this.audio.play();
-        this.paused = false;
-      } else {
-        this.audio.pause();
-        this.paused = true;
-      }
+  changeColor() {
+    if (this.darkmode) {
+      this.color1 = '#a9a9a9';
+      this.darkmode = false;
+      console.log("change darkmode");
+    } else { 
+      this.color1 = '#0c1027';
+      this.darkmode = true;
+      console.log("undo darkmode");
     }
-  }
-
-  pickSong() {
-    if (this.hasStarted && this.currentSong != this.pastSong) {
-      let song = this.songs[this.currentSong].source;
-      this.audio.src = song;
-      this.pastSong = this.currentSong;
-    }
-  }
-
-  skipSong() {
-    if (this.hasStarted) {
-      this.currentSong++;
-
-      if (this.currentSong > this.songs.length - 1) this.currentSong = 0;
-
-      this.paused = true;
-      this.playPause();
-    }
-  }
-
-  prevSong() {
-    if (this.hasStarted) {
-      this.currentSong--;
-
-      if (this.currentSong < 0) this.currentSong = this.songs.length - 1;
-
-      this.paused = true;
-      this.playPause();
-    }
-  }
-
-  startPlaying() {
-    this.hasStarted = true;
-    this.playPause();
   }
 }
