@@ -1,0 +1,207 @@
+
+.navbar-content{
+    
+    grid-template-columns: 2fr 5fr 4fr 1fr 2fr;
+}
+.heading{
+  
+    font-size: 20px;
+   
+}
+.search input{
+    width: 100%;
+    font-size: 15px;
+  
+}
+#search label{
+    font-size: 15px;
+ }
+
+#id2{
+    font-size: 15px;
+}
+.section-music-detail{
+    padding-left:0.5rem;
+}
+ 
+.music-4-contain{
+    height:7rem;
+    width:90%;
+}
+
+.lname h2{
+    font-size: 15px;
+}
+.lname h3{
+    font-size: 13px;
+}
+
+.heading{
+    display: none;
+}
+
+/*============ Media Query for about section==============*/
+
+
+
+.extract{
+    height: auto;
+    
+}
+
+
+.div12{
+        display: none;
+}
+     
+.div22{
+        display: none;
+}
+    
+.div1{
+        grid-template-areas: 
+        'div11';
+        grid-template-columns: 1fr;
+}
+    
+.div11{
+       width: 60%;
+       grid-area: div11;
+}
+
+.div2{
+        grid-template-areas: 
+        'div21';
+        grid-template-columns: 1fr;
+        height: auto;
+}
+
+    
+.div21{
+       width: 60%;
+       grid-area: div21;
+}
+
+.title{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+}
+.title img{
+       display: block;
+       margin-top: 0px;
+}
+.text{
+        display: none;
+}  
+.heart123 i{
+    font-size: 16px;   
+}
+    
+
+.art-image{
+        margin:25px;
+        width:80%;  
+}
+
+.art-image img{
+        border-radius: 50%;
+}
+    
+.art-image h1{
+       display: none;
+}
+.div11{
+         display: block;
+}
+.about{
+        width: auto;
+}
+    
+.aside{
+        display: none;
+}
+
+.volume-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+.volume{
+        margin-top:0px ;
+       width:50px;
+       
+}
+
+
+.container1{
+  
+    grid-template-areas: 
+    'section ';
+    grid-template-columns: 1fr ;
+    
+}
+.coldplay {
+    height: 200PX;
+    width: 100%;
+
+}
+.section-box-image{
+    height:5rem;
+    width:5rem;
+}
+.section-music-detail h3{
+    font-size: 17px;
+}
+.section-music-detail p{
+    font-size: 14px;
+}
+.main-section{
+    height: 25%;
+}
+
+.main-section-3{
+     margin: 20px auto;
+     overflow: hidden;
+}
+
+.main-section-3-inner-1-img{
+    height:60px ;
+    width:60px;
+  
+    
+}
+
+.main-section-3-inner-1-img h5{
+    margin-top: 5px;
+    font-size: 12px;
+
+    letter-spacing: 0px;
+}
+.main-section-3-inner-2-img{
+    height: 80px;
+    width:80px;
+   
+}
+
+
+.main-section-3-inner-3-img{
+    height: 200px;
+    width:210px;
+    margin: 0px 1px;
+   
+}
+
+.main-section-4-inner-1-img{
+    height: 100px;
+    width:100px;
+  
+}
+
+
+/* ASIDE  */
+
+.aside{
+    display: none;
+}
+

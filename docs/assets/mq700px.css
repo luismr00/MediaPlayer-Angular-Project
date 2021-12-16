@@ -1,0 +1,56 @@
+.navbar{
+	height: 60px;
+}
+
+
+.container{
+	height: auto;
+
+}
+.logo {
+    
+    grid-area: logo;
+    height: 60px;
+    width: 40px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.logo img{
+    width: 132%;
+}
+
+.heading {
+    grid-area: heading;
+    font-size: 16px;
+    padding: 18px 7px;
+    color: white;
+ }
+
+    .search input {
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+.notification i {
+    font-size: 16px;
+}
+.volume-bar i{
+    font-size: 14px;
+}
+
+.volume{
+	/* margin-top: 28px;
+    margin-left: -50px; */
+    width: 30px;
+}
+
+
+.heart123 {
+    position: absolute;
+    right: 12%;
+}
+
+.followers{
+    display: none;
+}

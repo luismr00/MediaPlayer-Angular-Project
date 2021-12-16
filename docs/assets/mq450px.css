@@ -1,0 +1,139 @@
+
+#search label{
+    font-size: 10px;
+ }
+ #id2{
+    font-size: 8px;
+}
+.section-music-detail{
+    padding-left:0.3rem;
+}
+ 
+.music-4-contain{
+    height:4rem;
+    width:90%;
+}
+
+.logo img{
+    height: 30px ;
+    width:30px;     
+}
+.section-box-image{
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+}
+.coldplay {
+    height: 120PX;
+    width: 100%;
+
+}
+.section-music-detail h3{
+    font-size: 8px;
+}
+.section-music-detail p{
+    font-size: 6px;
+}
+
+.container{
+    height: auto;
+
+}
+
+.logo {
+    
+    grid-area: logo;
+    height: 60px;
+    width: 40px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.heading {
+    grid-area: heading;
+    font-size: 16px;
+    padding: 18px 7px;
+    color: white;
+ }
+
+    .search input {
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+.notification i {
+    font-size: 16px;
+}
+.main-section-3-inner-1{
+    overflow-x: scroll;
+}
+.main-section-3-inner-1-img{
+    height: 40px;
+    width: 40px;
+}
+.main-section-3-inner-1-img h5{
+ font-size: 6px;
+}
+.main-section-3-inner-2-img{
+    height: 40px;
+    width: 40px;
+}
+.main-section-3-inner-2-img-detail h5{
+    font-size: 10px;
+
+}
+.main-section-3-inner-3-img{
+    height: 100px;
+    width:100px;
+    margin: 0px 1px;
+    
+}
+.main-section-3-inner-3-img-detail h5{
+    font-size: 10px;
+
+}
+.main-section-4-inner-1-img{
+    height: 60px;
+    width:60px;
+  
+}
+.main-section-4-inner-1-img h3{
+    font-size: 6px;
+}
+.main-section-4-inner-1-img p{
+    font-size: 4px;
+}
+.main-section-2-latest{
+    margin-top: -5%;
+}
+.main-section-3{
+        margin-top: -28%;
+}
+.mq450-sec-1{
+    
+    margin-top: -50%;
+}
+.mq450-sec-2{
+    margin-top: -23%;
+
+}
+
+.main-section-3-inner-1{
+    
+    margin-top: -10%;
+}
+.main-section-3-inner-2{
+    
+    margin-top: -23%;
+}
+.main-section-3-inner-3{
+    
+    margin-top: -23%;
+}
+.music-logo img{
+    height: 40px;
+    width: 40px;
+}
+.heading-main-section-4 h1,.heading-main-section-3 h3,.heading-main-section-3 h1{
+    font-size: 18px;
+}
