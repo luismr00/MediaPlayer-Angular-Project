@@ -1,0 +1,25 @@
+<footer class="footer">
+    <section id="player" class="player">
+      <div class="live">
+        <div class="title">
+          <div class="music-logo">
+            <img src="../assets/image/{{songs[currentSong].image}}" />
+            <div class="text">
+              <h2>{{ songs[currentSong].song }}</h2>
+              <h5>{{ songs[currentSong].artist }}</h5>
+            </div>
+          </div>
+          
+        </div>
+        
+  
+        <div class="btns">
+          <a (click)="startPlaying()"><i class="fa fa-retweet"></i></a>
+          <a (click)="skipSong()"><i class="fa fa-backward"></i></a>
+          <a (click)="playPause()"><i class="fa fa-pause"></i></a>
+          <a (click)="prevSong()"><i class="fa fa-forward"></i></a>
+          <a (click)="startPlaying()"><i class="fa fa-random"></i></a>
+        </div>
+      </div>
+    </section>
+  </footer>

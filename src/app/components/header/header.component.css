@@ -1,0 +1,134 @@
+.navbar{
+    grid-area: navbar;
+    background-color:#0c1027 ;
+    position: sticky;
+    height: 70px;
+    top:0px;
+    z-index: 100;
+    
+}
+
+.navbar-content{
+    height: 70px;
+    display: grid;
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'logo heading search notification user';
+    grid-template-columns: 2fr 9fr 1fr 1fr 2fr;
+}
+.logo{
+    grid-area: logo;
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo .lname{
+    color: white;
+    padding: 5px;
+}
+.logo .lname h3,.lname .lname h2{
+    text-align: center;
+}
+.lname h2{
+    font-family: 'Merienda One', cursive;
+    font-size: 18px;
+}
+.lname h3{
+    font-family: 'Merienda One', cursive;
+    font-size: 15px;
+}
+
+
+.logo img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%; 
+}
+.heading{
+    grid-area: heading;
+    font-size: 25px;
+    padding: 10px 10px;
+    color: white;
+}
+.search{
+    grid-area: search;
+    width: 100%;
+}
+  
+#search  {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#search label{
+   position: absolute;
+   left: 5%;
+   top:24%;
+   cursor: pointer;
+
+}
+#id2{
+   position: absolute;
+   right: 5%;
+   cursor: pointer;
+
+}
+.search input{
+    font-size: 20px;
+    border-radius: 8px;
+    line-height: 2rem;
+    outline: none;
+
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    
+}
+.search input::placeholder{
+    color: white;
+
+}
+.notification{
+    
+    grid-area: notification;
+    text-align: center;
+    padding: 4px 0px;
+    filter: invert(1);
+}
+.notification i{
+    cursor: pointer;
+    font-size: 20px;
+    filter: invert();
+}
+.user{
+    grid-area:user;
+}
+
+.container{
+    height: 140vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'container1 container1 container1 container1';
+    grid-template-rows: 0.8fr 8fr ;
+    background-color:#0c1027 ;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo1 img,.music-logo img{
+    animation: animate 11s linear infinite;
+
+}
