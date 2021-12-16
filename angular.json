@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hello-world": {
+    "MediaPlayer-Angular-Project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -24,8 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "404.html"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css",
@@ -70,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "hello-world:build:production"
+              "browserTarget": "MediaPlayer-Angular-Project:build:production"
             },
             "development": {
-              "browserTarget": "hello-world:build:development"
+              "browserTarget": "MediaPlayer-Angular-Project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hello-world:build"
+            "browserTarget": "MediaPlayer-Angular-Project:build"
           }
         },
         "test": {
@@ -93,8 +92,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "404.html"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css",
@@ -102,9 +100,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
-  "defaultProject": "hello-world"
+  "defaultProject": "MediaPlayer-Angular-Project"
 }
