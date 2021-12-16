@@ -1,0 +1,168 @@
+
+
+
+.heading{
+text-align: center;    
+}
+.lname h2{
+    font-size: 15px;
+}
+.lname h3{
+    font-size: 13px;
+}
+
+.container1{
+  
+    grid-template-areas: 
+    'section section section aside';
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    
+}
+.coldplay {
+    height: 200PX;
+    width: 100%;
+
+}
+.section-box-image{
+    height:5rem;
+    width:5rem;
+}
+.section-music-detail h3{
+    font-size: 17px;
+}
+.section-music-detail p{
+    font-size: 14px;
+}
+.main-section{
+    height: 25%;
+}
+
+.main-section-3{
+     
+     overflow: hidden;
+     margin-top: 20%;
+}
+.main-section-3-inner-2{
+    margin:5% auto; 
+}
+
+.main-section-3-inner-1-img{
+    height:60px ;
+    width:60px;
+    
+}
+
+.main-section-3-inner-1-img h5{
+    margin-top: 5px;
+    font-size: 12px;
+
+    letter-spacing: 0px;
+}
+.main-section-3-inner-2-img{
+    height: 80px;
+    width:80px;
+   
+}
+
+
+.main-section-3-inner-3-img{
+    height: 200px;
+    width:210px;
+    margin: 0px 1px;
+   
+}
+
+.main-section-4-inner-1-img{
+    height: 100px;
+    width:100px;
+  
+}
+
+.main-section-4-inner-1-img h3{
+
+    font-size: 16px;
+  
+}
+.main-section-4-inner-1-img p{
+    font-size: 12px;
+}
+
+
+
+/* ASIDE  */
+
+.music-info h1{
+    font-size: 21px;
+}
+.dropbtn h1{
+    
+    font-size: 15px;
+}
+   
+  
+.dropbtn i{
+    padding: 0px 4px;
+    font-size: 15px;
+}
+   
+.music-detail h4{
+    font-size: 14px;
+}
+.music-detail p{
+    font-size: 11px;
+}
+
+.heart-icon {
+    position: absolute;
+    right: 1%;
+    bottom: 45%;    
+    font-size: 13px;
+}
+.extract{
+        height: auto;
+    }
+     
+.similar h1{
+            font-size: 16px;
+        }
+.similar h3{
+            font-size: 12px;
+        }
+.box h1{
+            font-size: 16px;
+            
+        }
+.box h3{
+            font-size: 12px;
+            
+        }
+.music-detail h4{
+            font-size: 15px;
+            
+    }
+.music-detail p{
+            font-size: 10px;
+            
+    }
+.music-details h3{
+            font-size: 15px;
+            
+    }
+.music-details p{
+            font-size: 10px;
+            
+    }
+    
+.div2{
+    height: 40vh;
+    
+    }
+.heart123 i, .plus i, #ht1{
+        font-size: 13px;
+
+    }
+.heart-icon {
+    
+        right: 0%;
+    
+    }

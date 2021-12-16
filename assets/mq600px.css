@@ -1,0 +1,139 @@
+
+/* .navbar-content{
+    
+    grid-template-columns: 2fr 5fr 4fr 1fr 2fr;
+} */
+
+
+
+
+.container{
+	height: auto;
+
+}
+.logo {
+    
+    grid-area: logo;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+
+.lname {
+display: none;
+}
+
+
+.heading {
+    grid-area: heading;
+    font-size: 16px;
+    padding: 18px 7px;
+    color: white;
+ }
+
+ .search input {
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+.notification i {
+    font-size: 16px;
+}
+.heading{
+  
+    font-size: 18px;
+   
+}
+.search input{
+ 
+    font-size: 12px;
+  
+}
+.coldplay {
+    height: 150PX;
+    width: 100%;
+
+}
+.music-4-contain{
+   
+    height:6rem;
+    width:90%;
+   
+
+}
+.section-box-image{
+    height:4rem;
+    width:4rem;
+}
+.section-music-detail h3{
+    font-size: 15px;
+}
+.section-music-detail p{
+    font-size: 12px;
+}
+.main-section{
+    height: 25%;
+}
+
+.main-section-3{
+     margin: 20px auto;
+     overflow: hidden;
+}
+
+.main-section-3-inner-1-img{
+    height:60px ;
+    width:60px;
+}
+
+.main-section-3-inner-1-img h5{
+    margin-top: 5px;
+    font-size: 12px;
+
+    letter-spacing: 0px;
+}
+
+.main-section-3-inner-2-img{
+    margin: 0px 5px;
+    height: 60px;
+    width:60px;
+
+}
+
+
+.main-section-3-inner-3-img{
+    height: 150px;
+    width:180px;
+    margin: 0px 1px;
+   
+}
+
+.main-section-4-inner-1-img{
+    height: 90px;
+    width:100px;
+  
+}
+.main-section-4-inner-1-img h3{
+    font-size: 12px;
+}
+.main-section-4-inner-1-img p{
+    font-size: 9px;
+}
+
+
+
+
+/* ASIDE  */
+
+.aside{
+    display: none;
+}
+.volume-bar i{
+    font-size: 14px;
+}
+
+.volume{
+    width: 30px;
+}
+
