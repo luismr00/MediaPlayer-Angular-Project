@@ -1,6 +1,6 @@
 # Media Player Angular Project
 
-To view the project over the browser, visit https://media-player-angular-project.herokuapp.com/
+To view the project over the browser, please visit https://media-player-angular-project.herokuapp.com/.
 
 ## Key Functionalities
 
